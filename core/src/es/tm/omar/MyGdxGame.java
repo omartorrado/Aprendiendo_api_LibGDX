@@ -47,6 +47,10 @@ public class MyGdxGame extends ApplicationAdapter {
 		altoImagen= img.getHeight();
 		System.out.println(anchoPantalla+", "+altoPantalla+", "+altoImagen+", "+anchoImagen);
 
+		//Aqui creamos el procesador para el input y le indicamos al input que va a usar ese procesador
+		Procesador p=new Procesador();
+		Gdx.input.setInputProcessor(p);
+
 	}
 
 	//este es el metodo que se lanza para dibujar cosas en pantalla, se ejecuta automaticamente de 30 a 60 veces por segundo (seran algo asi como los FPS?)
